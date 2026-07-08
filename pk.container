@@ -1,0 +1,21 @@
+# Example Quadlet on how to use this image
+[Unit]
+Description=Portal Knights Game Server
+
+[Install]
+WantedBy=default.target
+
+[Service]
+Restart=on-failure
+MemoryDenyWriteExecute=false
+
+[Container]
+Image=localhost/runner:test
+ContainerName=portal-knights
+Timezone=Europe/Warsaw
+Environment=EXECUTABLE=pk_dedicated_server.exe
+Volume=/srv/portalknights:/srv/app:U,Z
+AutoUpdate=registry
+NoNewPrivileges=true
+Network=host
+UserNS=auto:size=1101
