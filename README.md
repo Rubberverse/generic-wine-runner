@@ -12,6 +12,7 @@ It's a generic Wine runner that...
 - Uses `winetricks` to install some DLLs - mainly Visual C++ Redistributables - to minimize potential issues
 - Makes use of `tini` to handle `SIGTERM` / `SIGINT`
 - Can launch any executable mounted at `/srv/app`
+- Near instantenous launch of your executable with wine (which is normal behavior but just highlighting how simple entrypoint script is)
 
 It's purpose is to run game servers and CLI applications in a container.<br>
 
