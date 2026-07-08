@@ -1,6 +1,6 @@
-# Rubberverse Containerfiles
+# Rubberverse Containerfile(s)
 
-These are assortments of my own hand-made containerfiles that you can use as a base for your own projects or ideas.
+Just random stuff I threw up mostly for myself but may be useful to anyone else. That's all.
 
 ## What is this one about?
 
