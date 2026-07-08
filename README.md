@@ -14,7 +14,7 @@ It's a generic Wine runner that...
 - Can launch any executable mounted at `/srv/app`
 - Near instantenous launch of your executable with wine (which is normal behavior but just highlighting how simple entrypoint script is)
 
-It's purpose is to run game servers and CLI applications in a container.<br>
+It's purpose is to run Windows-only game servers and CLI applications in a container.<br>
 
 It pulls `winehq-stable` from WineHQ repositories and `winetricks` from author's GitHub repository.
 Winetricks gets removed off the image later so it's not usable as a base later.
