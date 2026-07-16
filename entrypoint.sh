@@ -6,7 +6,7 @@ if [ ! -d "/srv/app" ] && [ ! -n "$(ls -A "/srv/app")" ]; then
 fi
 
 graceful_shutdown() {
-    echo "??? SIGTERM received, sending wineserver -k"
+    echo "??? SIGTERM / SIGINIT received, sending wineserver -k"
     wineserver -k2
     wait "$WINE_PID" 2>/dev/null
 }
